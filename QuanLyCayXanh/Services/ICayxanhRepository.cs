@@ -12,7 +12,10 @@ namespace QuanLyCayXanh.Services
         List<CayXanhDetail> Getbyid(string id);
         List<CayxanhDuong> GetbyStreet(string street);
         List<CayxanhDuongPhuong> GetbyCommune(string commune);
-
-        void Add(CayxanhModel cayxanhModel);
+        List<CayxanhVM> GetByStatus(string status);
+        List<CayXanhNguoi> GetByPersonWork(string id);
+        List<CayxanhLoai> GetByLoai(string tenloai, string loaire, string loaithan, string loaila);
+        void Add(CayxanhVM cayxanhVM);
+        bool Remove(string macay);
     }
 }

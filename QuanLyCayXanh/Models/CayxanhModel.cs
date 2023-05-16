@@ -34,7 +34,6 @@ namespace QuanLyCayXanh.Models
     {
         public string MaCay { get; set; }
         public string hinhAnh { get; set; }
-
         public string TenCay { get; set; }
         public string vitri { get; set; }
         public string duong { get; set; }
@@ -65,10 +64,21 @@ namespace QuanLyCayXanh.Models
         public string phuong { get; set; }
         public string Quan { get; set; }
         public string TrangThai { get; set; }
+        public string NguoiChamSoc { get; set; }
     }
     public class CayXanhNguoi : CayxanhVM
     {
         public string MaNV { get; set; }
         public string NguoiChamSoc { get; set; }
+        public string congviec { get; set; }
+    }
+
+    public class CayxanhLoai : CayxanhVM
+    {
+        public string TenLoaiCay { get; set; }
+        public string LoaiRe { get; set; }
+        public string LoaiThan { get; set; }
+        public string LoaiLa { get; set; }
+        public string MoTa { get; set; }
     }
 }
