@@ -36,6 +36,9 @@ namespace QuanLyCayXanh
             });
 
             services.AddScoped<ICayxanhRepository, CayxanhRepository>();
+            services.AddScoped<IPersonRepository, PersonRepository>();
+            services.AddScoped<ICongViecRepository, CongViecRepository>();
+
 
 
             services.AddSwaggerGen(c =>
