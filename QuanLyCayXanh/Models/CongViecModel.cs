@@ -16,5 +16,9 @@ namespace QuanLyCayXanh.Models
         public string MaCay { get; set; }
         public string NhanVien { get; set; }
     }
-
+    public class LoaiCongViecModel
+    {
+        public string MaLoaiCongViec { get; set; }
+        public string TenLoaiCongVIec { get; set; }
+    }
 }
