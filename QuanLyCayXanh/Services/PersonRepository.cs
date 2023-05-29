@@ -10,10 +10,13 @@ namespace QuanLyCayXanh.Services
     public class PersonRepository : IPersonRepository
     {
         private readonly QLCayxanhContext _context;
+
         public PersonRepository(QLCayxanhContext context)
         {
             _context = context;
         }
+
+        public object NhanViens => throw new NotImplementedException();
 
         public List<NhanVienModel> GetById(string CMND)
         {
