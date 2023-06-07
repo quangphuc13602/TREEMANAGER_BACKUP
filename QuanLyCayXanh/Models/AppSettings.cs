@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace QuanLyCayXanh.Models
 {
-    public class UserModel
+    public class AppSettings
     {
-        public string Email { get; set; }
-        public string  Password { get; set; }
+        public string Secretkey { get; set; }
     }
 }
